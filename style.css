@@ -3,14 +3,31 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    height: 40vh;
+    height: 70vh;
 }
 .early{
     height: 30vw;
 }
 body{
-    background-image: url(imgs/bg.jpg);
+    background-image: url(imgs/.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+}
+.text-box {
+    border: 2px solid #000;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-box {
+    border: 2px solid #000;
+    padding: 10px;
+    background-color: #f8f9fa;
+}
+
+.row {
+    margin-bottom: 40px;
 }
