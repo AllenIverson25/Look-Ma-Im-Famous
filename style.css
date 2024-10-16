@@ -1,0 +1,16 @@
+.imgsa{
+    background-image: url(imgs/james.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 40vh;
+}
+.early{
+    height: 30vw;
+}
+body{
+    background-image: url(imgs/bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
