@@ -25,56 +25,40 @@
     <header>
         
                     <!-- Navbar -->
-<nav class="navbar navbar-expand-lg  bg-light navbar-light">
-    <div class="container">
-      <a class="navbar-brand" href="#"
-        ><img
-          id="MDB-logo"
-          src="imgs/logo.png"
-          alt="MDB Logo"
-          draggable="false"
-          height="30"
-      /></a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-mdb-toggle="collapse"
-        data-mdb-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <i class="fas fa-bars"></i>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ms-auto align-items-center">
-          <li class="nav-item">
-            <a class="nav-link mx-2" href="#!"><i class="fas fa-plus-circle pe-2"></i>Early Years</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link mx-2" href="#!"><i class="fas fa-bell pe-2"></i>Major accomplishments</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link mx-2" href="#!"><i class="fas fa-heart pe-2"></i>Significant contributions</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link mx-2" href="#!"><i class="fas fa-heart pe-2"></i>notable events</a>
-          </li>
-          <li class="nav-item ms-3">
-            <a class="btn btn-black btn-rounded" href="#!">Videos</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
+                    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                      <div class="container-fluid">
+                        <a class="navbar-brand" href="#">Navbar</a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                          <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                          <ul class="navbar-nav">
+                            <li class="nav-item">
+                              <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" href="#">Features</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" href="#">Pricing</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </nav>
   <!-- Navbar -->
 
   <div class="container-fluid p-0 mx-auto " style="height: 100vh;">
     <div class="row d-flex justify-content-center align-items-center hero" style="width: 100%; height: 100vh; background-image: url('imgs/hero.png'); background-size: cover; background-position: center; background-repeat: no-repeat;">
-        <div class="col-12 col-lg-6 text-center d-flex flex-column justify-content-center">
-            <h1 class="pt-3 text-black fs-1 box ">James Naismith</h1>
-            <p class="text-white fs-2">
-                "Basketball is a pure invention." ~ James Naismith
+        <div class="col-12 col-lg-6 text-center d-flex flex-column justify-content-center ">
+          <div class="mask text-light d-flex justify-content-center flex-column text-center" style="background-color: rgba(0, 0, 0, 0.5)">
+            <h4 class="fs-1">James Naismith</h4>
+            <p class="m-0 fs-2">"Basketball is a pure invention." ~ James Naismith</p>
+          </div>
+        
             </p>
         </div>
     </div>
@@ -82,59 +66,67 @@
 
 
 
-    <main>
-        <div class="container-fluid">
+    <main class="m-5">
+        <div class="container-fluid marge">
             <!-- Row 1 (Image on Left, Text on Right) -->
-            <div class="row align-items-center">
+            <div class="row align-items-center bg-white  rounded shadow">
                 <div class="col-12 col-lg-6">
-                    <div class="img-box">
+                    <div class="img-box rounded  ">
                         <img id="floating-image" class="img-fluid" src="imgs/earlylife.jpg" alt="Placeholder Image">
                     </div>
                 </div>
                 <div class="col-12 col-lg-6">
-                    <div class="text-box border border-black border-2">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse nemo aliquam quibusdam at eum earum consectetur vero iste, accusamus voluptatibus?</p>
+                    <div class="text-box border border-black border-2 p-3 rounded-top">
+                        <p>Born near Almonte, Ontario on November 6, 1861, James was the eldest son of Scottish immigrants John and Margaret Naismith. 
+                          Jim headed for McGill University’s gymnasium where he soon began participating in the gymnastic and rugby program. By his junior year, he was winning the university’s highest honours for his athletic involvement. 
+                          While working for the YMCA, James was given the task of introducing a new indoor game in 1891, with two main objectives – “make it fair for all players, and free of rough play”.
+                          </p>
                     </div>
                 </div>
             </div>
 
             <!-- Row 2 (Text on Left, Image on Right) -->
-            <div class="row align-items-center">
+            <div class="row align-items-center bg-white">
                 <div class="col-12 col-lg-6 order-lg-2">
-                    <div class="img-box">
+                    <div class="img-box rounded">
                         <img class="img-fluid" src="imgs/majorcomp.png" alt="Placeholder Image">
                     </div>
                 </div>
-                <div class="col-12 col-lg-6 order-lg-1">
-                    <div class="text-box border border-black border-2">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem adipisci culpa mollitia architecto minus! Veritatis, mollitia. Quae voluptas incidunt id.</p>
+                <div class="col-12 col-lg-6 order-lg-1 rounded-top">
+                    <div class="text-box border border-black border-2 p-3 ">
+                        <p>Inventing basketball: In 1891, Naismith invented basketball as an indoor alternative to football that would be less likely to cause injuries. He created the game to keep athletes active during the winter. <br>
+                          Writing the first basketball rulebook: Naismith wrote the original 13 rules of basketball. <br>
+                          Establishing the University of Kansas basketball program: Naismith founded the basketball program at the University of Kansas. </p>
                     </div>
                 </div>
             </div>
 
             <!-- Row 3 (Image on Left, Text on Right) -->
-            <div class="row align-items-center">
+            <div class="row align-items-center bg-white">
                 <div class="col-12 col-lg-6">
-                    <div class="img-box">
+                    <div class="img-box rounded">
                         <img class="img-fluid" src="imgs/contribute.png" alt="Placeholder Image">
                     </div>
                 </div>
                 <div class="col-12 col-lg-6">
-                    <div class="text-box border border-black border-2">
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo, maiores vero nobis ad quia aliquam unde tenetur. Quibusdam, assumenda beatae.</p>
+                    <div class="text-box border border-black border-2 p-3 rounded-top">
+                        <p>Keeping students occupied
+                          Naismith was tasked with keeping a group of rowdy 14-year-old boys at the YMCA in Springfield, Massachusetts occupied during a harsh New England winter. 
+                          Creating an indoor game
+                          The students had too much energy to burn off, but it was too cold to play football or baseball, and too dangerous to play those sports in the gym. </p>
                     </div>
                 </div>
             </div>
 
             <!-- Row 4 (Text on Left, Image on Right) -->
-            <div class="row align-items-center">
+            <div class="row align-items-center bg-white">
                 <div class="col-12 col-lg-6 order-lg-2">
-                    <div class="img-box">
-                        <img class="img-fluid" src="imgs/notable.png" alt="Placeholder Image">
+                    <div class="img-box rounded">
+                        <img class="img-fluid rounded-top" src="imgs/notable.png" alt="Placeholder Image">
                     </div>
                 </div>
                 <div class="col-12 col-lg-6 order-lg-1">
-                    <div class="text-box border border-black border-2">
+                    <div class="text-box border border-black border-2 p-3">
                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam repellendus vel repudiandae doloribus, officia asperiores laudantium eos voluptates fugiat at rem culpa repellat minus pariatur unde voluptatibus ducimus reprehenderit! Voluptatum.</p>
                     </div>
                 </div>
