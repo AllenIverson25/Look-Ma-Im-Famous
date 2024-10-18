@@ -41,7 +41,6 @@
   }
   
   img {
-    animation: float 2s ease-in-out infinite;
   }
   .hero{
     height: 40vh;
@@ -52,4 +51,7 @@
     
 
   }
- .shadow{
+ 
+
+  
+
