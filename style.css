@@ -1,9 +1,9 @@
-.imgsa{
-    background-image: url(imgs/james.jpg);
+.hero{
+    background-image: url(imgs/hero.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    height: 150vh;
+   
 }
 .early{
     height: 30vw;
@@ -45,3 +45,9 @@
   .hero{
     height: 40vh;
   }
+  .body{
+    background-color:red;
+
+  }
+  
+  
