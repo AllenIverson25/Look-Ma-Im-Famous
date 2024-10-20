@@ -1,10 +1,4 @@
-.hero{
-    background-image: url(imgs/hero.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-   
-}
+
 .early{
     height: 30vw;
 }
@@ -28,30 +22,119 @@
 .row {
     margin-bottom: 40px;
 }
-@keyframes float {
-    0% {
-      transform: translateY(0);
-    }
-    50% {
-      transform: translateY(-10px);
-    }
-    100% {
-      transform: translateY(0);
-    }
-  }
+
   
-  img {
-  }
-  .hero{
-    height: 40vh;
-  }
+  
   body{
     background-color: #c2b6b6;
     background-image: linear-gradient(315deg, #c2b6b6 0%, #576574 74%);
     
 
   }
+ .overlap{
+  margin-bottom: -2px;
+  z-index: 2;
+  position: relative;
+ }
+
+ a {
+	text-decoration: none;
  
+}
 
-  
+.et-hero-tabs,
+.et-slide {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+    background: #eee;
+		text-align: center;
+		padding: 0 2em;
+    position: sticky;
+    background-image: url(imgs/herofr.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; /* Centers the image within the container */
+    width: 100%; /* Makes sure the div takes the full width */
+    height: 100vh; /* Sets the height to 100% of the viewport height */
 
+    
+    h1 {
+        font-size: 2rem;
+        margin: 0;
+        letter-spacing: 1rem;
+    }
+    h3 {
+        font-size: 1rem;
+        letter-spacing: 0.3rem;
+        opacity: 0.6;
+    }
+}
+
+.et-hero-tabs-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around; /* Align tabs evenly */
+  position: fixed; /* Makes the navbar fixed at the bottom or top */
+  bottom: 0; /* Sticks it to the bottom */
+  width: 100%; /* Makes it take up the full width of the viewport */
+  height: 70px; /* Set the height of the navbar */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Adds shadow for a 3D effect */
+  background: #fff; /* White background */
+  z-index: 5000; /* Keep the navbar on top of other content */
+}
+
+.et-hero-tabs-container--top {
+  position: fixed; /* Fixes the navbar to the top when the class is applied */
+  top: 0; /* Positions the navbar at the top */
+  bottom: auto; /* Removes the bottom property so it doesn't stick to the bottom anymore */
+}
+
+
+.et-hero-tab {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    color: #000;
+    letter-spacing: 0.1rem;
+		transition: all 0.5s ease;
+		font-size: 0.8rem;
+	  &:hover {
+			color:white;
+      background: rgba(102,177,241,0.8);
+			transition: all 0.5s ease;
+    
+
+    }
+}
+
+.et-hero-tab-slider {
+    position: absolute;
+    bottom: 0;
+    width: 0;
+    height: 6px;
+    background: #66B1F1;
+    transition: left 0.3s ease;
+}
+
+@media (min-width: 800px) {
+	.et-hero-tabs,
+	.et-slide {
+    h1 {
+        font-size: 3rem;
+    }
+    h3 {
+        font-size: 1rem;
+    }
+	}
+	.et-hero-tab {
+		font-size: 1rem;
+	}
+}
+
+.section{
+}
