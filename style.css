@@ -1,5 +1,17 @@
+/* General styling */
+body {
+  background-color: #c2b6b6;
+  background-image: linear-gradient(315deg, #c2b6b6 0%, #576574 74%);
+  overflow-x: hidden; /* Prevent horizontal overflow */
+}
+
+/* Early life and row adjustments */
 .early {
   height: 30vw;
+}
+
+.row {
+  margin-bottom: 40px;
 }
 
 .text-box {
@@ -8,41 +20,37 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%; /* Ensures it spans full container width */
+  box-sizing: border-box;
 }
 
 .img-box {
   border: 2px solid #000;
   padding: 10px;
   background-color: #f8f9fa;
+  width: 100%; /* Full container width */
+  box-sizing: border-box;
 }
 
-.row {
-  margin-bottom: 40px;
-}
-
-body {
-  background-color: #c2b6b6;
-  background-image: linear-gradient(315deg, #c2b6b6 0%, #576574 74%);
-  overflow-x: hidden;
-}
-
+/* Overlapping elements */
 .overlap {
   margin-bottom: -2px;
   z-index: 2;
   position: relative;
 }
 
+/* Link styling */
 a {
   text-decoration: none;
 }
 
+/* Hero section */
 .et-hero-tabs,
 .et-slide {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
   position: relative;
   background: #eee;
   text-align: center;
@@ -51,9 +59,11 @@ a {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  width: 100%;
+  width: 100vw; /* Full viewport width */
+  height: 100vh; /* Full viewport height */
 }
 
+/* Navbar container */
 .et-hero-tabs-container {
   display: flex;
   flex-direction: row;
@@ -63,18 +73,19 @@ a {
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
   background: #fff;
   z-index: 5000;
-  position: absolute; /* Start at the bottom */
-  bottom: 0; /* Position at the bottom */
-  left: 0; /* Align to the left */
-  right: 0; /* Align to the right */
-  transition: top 0.3s; /* Smooth transition */
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transition: top 0.3s;
 }
 
 .et-hero-tabs-container--top {
   position: fixed; /* Stick to the top on scroll */
-  top: 0; /* Move to the top */
+  top: 0;
 }
 
+/* Navbar tabs */
 .et-hero-tab {
   display: flex;
   justify-content: center;
@@ -100,56 +111,91 @@ a {
   transition: left 0.3s ease;
 }
 
+/* Larger screen adjustments */
 @media (min-width: 800px) {
   .et-hero-tabs,
   .et-slide {
-      h1 {
-          font-size: 5rem;
-      }
-      h3 {
-          font-size: 1.5rem;
-      }
+    h1 {
+      font-size: 5rem;
+    }
+    h3 {
+      font-size: 1.5rem;
+    }
   }
   .et-hero-tab {
-      font-size: 1rem;
+    font-size: 1rem;
   }
 }
 
-.section {}
 
+
+
+/* Title and info adjustments */
 .Title-info {
   align-self: start;
   margin-left: 200px;
-
-  
-
 }
 
+/* Responsive adjustments for mobile screens */
 @media (max-width: 768px) {
+  /* Navbar adjustments */
+  .et-hero-tabs-container {
+    width: 100vw;
+    padding: 0;
+    overflow: hidden;
+  }
+
+  .et-hero-tab {
+    font-size: 0.7rem;
+    padding: 10px 3px;
+    flex: 1;
+    text-align: center;
+  }
+
+  .et-hero-tab-slider {
+    height: 4px;
+  }
+
+  /* Title adjustments */
   .Title-info h1 {
-      font-size: 8vw; /* Larger text on smaller screens */
+    font-size: 6.5vw;
   }
+
   .Title-info h3 {
-      font-size: 4vw; /* Larger text on smaller screens */
+    font-size: 3.2vw;
   }
+
+  /* Hero image responsive adjustments */
   .et-hero-tabs {
-      height: 70vh;
-      
+    height: 50vh; /* Reduced height for mobile */
+    background-size: cover; /* Cover container width */
   }
-  .et-hero-tab{
-    padding: 5px;
+
+  /* Text box font and padding adjustments */
+  .text-box, .img-box {
+    font-size: 0.8rem;
+    padding: 10px;
+  }
+  
+  /* Overflow protection for major accomplishments */
+  #major h1 {
+    font-size: 1.5rem; /* Adjusted font size */
   }
 }
-.doggy{
+
+/* Font style for specific text */
+.doggy {
   font-family: "brevia", sans-serif;
   font-weight: 400;
   font-style: normal;
- 
 }
+
+/* Scroll-margin adjustments for links */
 #rowone,
 #major,
 #sig,
 #notable,
 #vid {
-    scroll-margin-top: 100px; /* Adjust this value if necessary */
+  scroll-margin-top: 100px;
 }
+
