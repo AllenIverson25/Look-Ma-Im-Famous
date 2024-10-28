@@ -146,3 +146,10 @@ a {
   font-style: normal;
  
 }
+#rowone,
+#major,
+#sig,
+#notable,
+#vid {
+    scroll-margin-top: 100px; /* Adjust this value if necessary */
+}
